@@ -1,9 +1,5 @@
 # Connecting Copilot Studio to an SAP ABAP MCP Server via Azure API Management
 
-> **Status:** Draft — based on live demo sessions from 2026-06-15  
-> **Authors:** Holger Bruchelt (Microsoft), Jörg Müller (Brandeis)  
-> **Screenshots:** Marked with 📸 — add after completing your own walkthrough
-
 ---
 
 ## Introduction
@@ -403,6 +399,4 @@ As your MCP server grows, keep agents focused:
 
 - [Copilot Studio — MCP support documentation](https://learn.microsoft.com/microsoft-copilot-studio/agent-extend-action-mcp)
 - [Azure API Management — SAP integration](https://learn.microsoft.com/azure/api-management/sap-api)
-- [ABAP MCP SDK — GitHub (Jörg Müller / Brandeis)](https://github.com/) ← *Add the correct GitHub URL here*
-- [HLAPI Demo repository (Node-RED + Dashboard)](https://github.com/) ← *Add the correct GitHub URL here*
-- SAP ABAP Conference session (ABAP Conf 2026-06-22, Mannheim)
+- [ABAP MCP SDK — GitHub ](https://github.com/abap-ai/mcp) 
