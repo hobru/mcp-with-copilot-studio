@@ -112,7 +112,7 @@ http://<sap-host>:<port>/<area>/<server-name>
 
 Example from the demo:
 ```
-http://demo.brandeis.de:50000/demo/zbchlp
+https://demo.yourserver.de:50001/demo/zbchlp
 ```
 
 > The path does **not** end with `/mcp`. The URL above is the full endpoint. No additional suffix is needed.
