@@ -318,6 +318,36 @@ This enables **multi-agent scenarios**: for example, in one message you can ask 
 
 ---
 
+### Step 8 — Making It Real
+
+The previous steps demonstrate the integration with a simulated shopfloor. In a real production environment, the **SAP system controls the actual shopfloor** — devices, processes, and operational dashboards — and the MCP server becomes the bridge between natural-language interaction and live industrial systems.
+
+#### Emergency warnings from the Plant Manager
+
+In an emergency, the **Plant Manager**  can submit a warning directly from **Microsoft Teams in natural language** — no special tool or transaction required. The MCP server takes this information and submits it to the SAP system, where the **required actions and warnings are triggered automatically** and displayed on the shopfloor dashboard for everyone on the floor to see.
+
+📸 ![Plant Manager submitting an accident warning via Teams in natural language](teams-werkleiter-unfall.png)
+
+#### Interacting with shopfloor devices via Copilot
+
+Through Copilot, **shopfloor workers can interact directly with physical devices**, such as scales on the floor. A simple request like *"Get me the weight of the scale and show it on the dashboard"* triggers the MCP server to read the device and publish the result — closing the loop between the worker, the device, and the shared dashboard.
+
+📸 ![Mobile Copilot agent reading a scale and updating the dashboard](mobile-agent.png)
+
+#### Complex tasks from Teams desktop
+
+Even more complex tasks can be executed from **Teams desktop**. Beyond interacting with devices, workers can trigger **communications to other workers** and orchestrate multi-step actions — all routed through the MCP server and reflected live on the shopfloor dashboard.
+
+📸 ![Teams desktop driving device interaction and progress updates on the dashboard](desktop-progress.png)
+
+#### End-to-end architecture flow
+
+The architecture flow ties it all together. It shows the interaction between the **Copilot (Studio) agent**, **Azure API Management**, and the **MCP server running on the SAP system**. From there, the **business logic** and **connectivity to the shopfloor** live inside the SAP system, while communication flows through **data brokers** out to the **dashboard and the devices on the shopfloor**.
+
+📸 ![End-to-end architecture: Copilot Studio → Azure APIM → MCP Server on SAP → business logic & shopfloor connectivity → data brokers → dashboard & devices](architecture.png)
+
+---
+
 ## Production Considerations
 
 ### Replace Basic Auth with Principal Propagation
